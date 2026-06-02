@@ -24,8 +24,8 @@
     }
 
     body {
-      background-color: #0b0c10; 
-      color: #ffffff;
+      background-color: #f4f7f5; /* Light mint-gray background */
+      color: #2d3748; /* Dark slate text for readability */
       font-family: 'Helvetica Neue', Arial, sans-serif;
       overflow-x: hidden; 
       width: 100%;
@@ -37,13 +37,14 @@
 
     /* NAVBAR CODE */
     .navbar {
-      background-color: #0b0c10;
-      border-bottom: 1px solid rgba(197, 168, 128, 0.2); 
+      background-color: #ffffff;
+      border-bottom: 1px solid rgba(46, 125, 50, 0.15); /* Light green tint border */
       padding: 18px 20px;
       position: sticky; 
       top: 0;
       width: 100%;
       z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
     }
 
     .nav-container {
@@ -69,12 +70,12 @@
     }
 
     .social-icons a {
-      color: #c5a880; 
+      color: #2e7d32; /* Premium Light Emerald Green */
       text-decoration: none;
       font-size: 14px;
       width: 32px;
       height: 32px;
-      border: 1px solid rgba(197, 168, 128, 0.4);
+      border: 1px solid rgba(46, 125, 50, 0.3);
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -83,8 +84,8 @@
     }
 
     .social-icons a:hover {
-      background-color: #c5a880;
-      color: #0b0c10;
+      background-color: #2e7d32;
+      color: #ffffff;
     }
 
     .logo-text {
@@ -100,15 +101,15 @@
       font-size: 22px; 
       letter-spacing: 4px;
       font-weight: 700;
-      color: #ffffff;
+      color: #1a202c;
       line-height: 1;
     }
 
     .logo-text h2 {
       font-size: 11px;
       letter-spacing: 5px;
-      color: #c5a880; 
-      font-weight: 400;
+      color: #2e7d32; 
+      font-weight: 600;
       margin-top: 5px;
     }
 
@@ -124,17 +125,17 @@
     }
 
     .nav-links a {
-      color: #ffffff;
+      color: #4a5568;
       text-decoration: none;
       margin-left: 30px;
       font-size: 13px;
       letter-spacing: 1.5px;
-      font-weight: 500;
+      font-weight: 600;
       transition: color 0.3s;
     }
 
     .nav-links a:hover {
-      color: #c5a880;
+      color: #2e7d32;
     }
 
     .hamburger {
@@ -148,7 +149,7 @@
       display: block;
       width: 25px;
       height: 3px;
-      background-color: #c5a880;
+      background-color: #2e7d32;
       border-radius: 2px;
     }
 
@@ -171,11 +172,13 @@
 
     .hero-image-container {
       position: relative;
-      border: 1px solid rgba(197, 168, 128, 0.3);
+      border: 1px solid rgba(46, 125, 50, 0.2);
       padding: 12px;
       border-radius: 16px;
       display: block;
       flex-shrink: 0;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     }
 
     .hero-img {
@@ -194,31 +197,33 @@
       font-size: 34px; 
       line-height: 1.5;
       margin-bottom: 25px;
-      font-weight: 600;
-      color: #ffffff;
+      font-weight: 700;
+      color: #1a202c;
     }
 
     .quote-box {
-      border: 1px solid rgba(197, 168, 128, 0.2);
+      border: 1px solid rgba(46, 125, 50, 0.15);
       padding: 20px;
       border-radius: 8px;
-      background: rgba(255, 255, 255, 0.01);
+      background: #ffffff;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.02);
     }
 
     .quote-text {
       font-style: italic;
-      color: #c5a880;
+      color: #2e7d32;
       font-size: 15px;
       line-height: 1.6;
+      font-weight: 500;
     }
 
     .section-title {
       font-size: 22px;
-      color: #c5a880;
+      color: #2e7d32;
       letter-spacing: 2px;
       text-align: center;
       margin-bottom: 45px;
-      font-weight: 500;
+      font-weight: 600;
       text-transform: uppercase;
     }
 
@@ -241,19 +246,21 @@
     }
 
     .property-card {
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(197, 168, 128, 0.15);
+      background: #ffffff;
+      border: 1px solid rgba(46, 125, 50, 0.12);
       border-radius: 14px;
       overflow: hidden;
       display: flex;
       flex-direction: column;
       height: auto;
-      transition: transform 0.3s ease, border-color 0.3s ease;
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.02);
     }
 
     .property-card:hover {
       transform: translateY(-4px);
-      border-color: rgba(197, 168, 128, 0.4);
+      border-color: rgba(46, 125, 50, 0.4);
+      box-shadow: 0 10px 25px rgba(46, 125, 50, 0.08);
     }
 
     .hidden-listings-wrapper {
@@ -279,8 +286,8 @@
       padding: 15px 20px;
       text-align: center;
       background: transparent;
-      border: 1px solid #c5a880;
-      color: #c5a880;
+      border: 1px solid #2e7d32;
+      color: #2e7d32;
       border-radius: 8px;
       font-size: 14px;
       font-weight: 600;
@@ -291,8 +298,8 @@
     }
 
     .btn-view-more-label:hover {
-      background: #c5a880;
-      color: #0b0c10;
+      background: #2e7d32;
+      color: #ffffff;
     }
 
     .view-more-checkbox:checked ~ .btn-view-more-label {
@@ -316,16 +323,16 @@
 
     .property-title {
       font-size: 16px;
-      font-weight: 600;
+      font-weight: 700;
       margin-bottom: 10px;
-      color: #ffffff;
+      color: #1a202c;
       letter-spacing: 0.5px;
       min-height: 40px;
     }
 
     .property-details {
       font-size: 13px;
-      color: #d1d1d1;
+      color: #4a5568;
       line-height: 1.5;
       margin-bottom: 16px;
       min-height: 60px; 
@@ -334,13 +341,13 @@
     .property-specs {
       display: flex;
       justify-content: space-between;
-      background: rgba(197, 168, 128, 0.05);
-      border: 1px solid rgba(197, 168, 128, 0.1);
+      background: rgba(46, 125, 50, 0.06);
+      border: 1px solid rgba(46, 125, 50, 0.1);
       padding: 10px 12px;
       border-radius: 8px;
       font-size: 12px;
-      color: #c5a880;
-      font-weight: 500;
+      color: #2e7d32;
+      font-weight: 600;
       margin-bottom: 20px;
     }
 
@@ -360,7 +367,7 @@
       padding: 10px 2px;
       border-radius: 8px;
       font-size: 11px;
-      font-weight: 600;
+      font-weight: 700;
       text-decoration: none;
       letter-spacing: 0.5px;
       text-transform: uppercase;
@@ -368,23 +375,24 @@
     }
 
     .btn-call {
-      background-color: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      color: #ffffff;
+      background-color: #edf2f7;
+      border: 1px solid #cbd5e0;
+      color: #2d3748;
     }
     .btn-call:hover {
-      background-color: #ffffff;
-      color: #0b0c10;
+      background-color: #2d3748;
+      color: #ffffff;
+      border-color: #2d3748;
     }
 
     .btn-email {
-      background-color: rgba(197, 168, 128, 0.05);
-      border: 1px solid rgba(197, 168, 128, 0.3);
-      color: #c5a880;
+      background-color: rgba(46, 125, 50, 0.05);
+      border: 1px solid rgba(46, 125, 50, 0.3);
+      color: #2e7d32;
     }
     .btn-email:hover {
-      background-color: #c5a880;
-      color: #0b0c10;
+      background-color: #2e7d32;
+      color: #ffffff;
     }
 
     .btn-telegram {
@@ -406,48 +414,48 @@
       text-align: center;
       padding: 10px;
       font-size: 12px;
-      color: #c5a880;
-      border: 1px dashed rgba(197, 168, 128, 0.3);
+      color: #2e7d32;
+      border: 1px dashed rgba(46, 125, 50, 0.4);
       border-radius: 8px;
       cursor: pointer;
-      font-weight: 500;
+      font-weight: 600;
       transition: background 0.3s;
     }
     .lbl-toggle-details:hover {
-      background: rgba(197, 168, 128, 0.05);
+      background: rgba(46, 125, 50, 0.05);
     }
 
     .expandable-details-content {
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.4s ease-out;
-      background: rgba(0, 0, 0, 0.2);
+      background: #f8fafc;
       border-radius: 8px;
     }
 
     .inner-details-box {
       padding: 15px;
-      border-top: 1px solid rgba(197, 168, 128, 0.1);
+      border-top: 1px solid rgba(46, 125, 50, 0.1);
       margin-top: 10px;
     }
 
     .detail-price-tag {
       font-size: 15px;
-      color: #ffffff;
-      font-weight: 600;
+      color: #1a202c;
+      font-weight: 700;
       margin-bottom: 4px;
     }
 
     .detail-dp-tag {
       font-size: 12px;
-      color: #c5a880;
-      font-weight: 500;
+      color: #2e7d32;
+      font-weight: 600;
       margin-bottom: 12px;
     }
 
     .deep-specs-list {
       font-size: 12px;
-      color: #a3a3a3;
+      color: #4a5568;
       list-style: none;
       line-height: 1.6;
     }
@@ -457,7 +465,7 @@
     }
     
     .deep-specs-list i {
-      color: #c5a880;
+      color: #2e7d32;
       width: 18px;
       font-size: 11px;
     }
@@ -468,6 +476,7 @@
       color: #24a1de !important;
     }
 
+    /* When checked, show the accordion wrapper smoothly */
     .detail-toggle-chk:checked ~ .expandable-details-content {
       max-height: 600px; 
     }
@@ -486,10 +495,11 @@
       display: flex;
       align-items: stretch;
       gap: 40px;
-      background: rgba(255, 255, 255, 0.01);
-      border: 1px solid rgba(197, 168, 128, 0.15);
+      background: #ffffff;
+      border: 1px solid rgba(46, 125, 50, 0.15);
       border-radius: 12px;
       padding: 40px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.02);
     }
 
     .about-column {
@@ -500,25 +510,26 @@
 
     .about-column p {
       line-height: 1.8;
-      color: #d1d1d1;
+      color: #4a5568;
       font-size: 14px;
     }
 
     .about-divider {
       width: 1px;
-      background: rgba(197, 168, 128, 0.25);
+      background: rgba(46, 125, 50, 0.25);
       align-self: inherit;
     }
 
     /* FOOTER AND CONTACTS */
     .main-footer {
-      background-color: #06070a;
-      border-top: 1px solid rgba(197, 168, 128, 0.15);
+      background-color: #1a202c; /* Clean dark gray footer for elegant finish */
+      border-top: 1px solid rgba(46, 125, 50, 0.2);
       padding: 40px 20px;
       display: block;
       height: auto;
       margin-top: auto; 
       clear: both;
+      color: #ffffff;
     }
 
     .footer-container {
@@ -541,18 +552,18 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      color: #ffffff;
+      color: #e2e8f0;
       text-decoration: none;
       font-size: 15px;
       transition: color 0.3s;
     }
 
     .contact-item i {
-      color: #c5a880;
+      color: #2e7d32;
     }
 
     .contact-item:hover {
-      color: #c5a880;
+      color: #2e7d32;
     }
 
     .footer-logo-brand {
@@ -565,17 +576,17 @@
     .lp-monogram {
       font-size: 32px;
       font-weight: 800;
-      color: #c5a880;
+      color: #2e7d32;
       letter-spacing: -2px;
       line-height: 1;
       font-family: 'Times New Roman', Times, serif;
-      border-bottom: 1px solid rgba(197, 168, 128, 0.4);
+      border-bottom: 1px solid rgba(46, 125, 50, 0.4);
       padding-bottom: 2px;
     }
 
     .footer-credits {
       font-size: 11px;
-      color: #555555;
+      color: #a0aec0;
       letter-spacing: 1px;
     }
 
@@ -642,12 +653,12 @@
       }
 
       .social-icons-mobile a {
-        color: #c5a880; 
+        color: #2e7d32; 
         text-decoration: none;
         font-size: 13px;
         width: 28px;
         height: 28px;
-        border: 1px solid rgba(197, 168, 128, 0.3);
+        border: 1px solid rgba(46, 125, 50, 0.3);
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -661,11 +672,12 @@
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: #0b0c10;
-        border-bottom: 1px solid rgba(197, 168, 128, 0.2);
+        background-color: #ffffff;
+        border-bottom: 1px solid rgba(46, 125, 50, 0.2);
         padding: 20px 0;
         text-align: center;
         z-index: 99;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.05);
       }
 
       .nav-links a {
@@ -781,7 +793,7 @@
         <a href="https://t.me/+251911717992" target="_blank"><i class="fab fa-telegram-plane"></i></a>
       </div>
 
-      <nav class="nav-links">
+      <nav class="nav-links" id="navLinksMenu">
         <a href="#home">HOME</a>
         <a href="#listings">LISTINGS</a>
         <a href="#about">ABOUT US</a>
@@ -805,8 +817,6 @@
 
   <section class="listings-section" id="listings">
     <h3 class="section-title">Our Listings</h3>
-    
-    <input type="radio" name="details-group" id="close-all-details" class="detail-toggle-chk" checked>
 
     <div class="listings-grid">
       
@@ -823,7 +833,7 @@
             <a href="mailto:Ekru7447@gmail.com?subject=Inquiry: Aware 121m²" class="btn-action btn-email"><i class="fas fa-envelope"></i> Email</a>
             <a href="https://t.me/+251911717992" target="_blank" class="btn-action btn-telegram"><i class="fab fa-telegram-plane"></i> Telegram</a>
           </div>
-          <input type="radio" name="details-group" id="toggle-p1" class="detail-toggle-chk">
+          <input type="checkbox" id="toggle-p1" class="detail-toggle-chk individual-detail-toggle">
           <label for="toggle-p1" class="lbl-toggle-details">View Details</label>
           <div class="expandable-details-content">
             <div class="inner-details-box">
@@ -854,7 +864,7 @@
             <a href="mailto:Ekru7447@gmail.com?subject=Inquiry: Piassa Lycee 132m²" class="btn-action btn-email"><i class="fas fa-envelope"></i> Email</a>
             <a href="https://t.me/+251911717992" target="_blank" class="btn-action btn-telegram"><i class="fab fa-telegram-plane"></i> Telegram</a>
           </div>
-          <input type="radio" name="details-group" id="toggle-p2" class="detail-toggle-chk">
+          <input type="checkbox" id="toggle-p2" class="detail-toggle-chk individual-detail-toggle">
           <label for="toggle-p2" class="lbl-toggle-details">View Details</label>
           <div class="expandable-details-content">
             <div class="inner-details-box">
@@ -885,7 +895,7 @@
             <a href="mailto:Ekru7447@gmail.com?subject=Inquiry: Bulgaria 68m²" class="btn-action btn-email"><i class="fas fa-envelope"></i> Email</a>
             <a href="https://t.me/+251911717992" target="_blank" class="btn-action btn-telegram"><i class="fab fa-telegram-plane"></i> Telegram</a>
           </div>
-          <input type="radio" name="details-group" id="toggle-p3" class="detail-toggle-chk">
+          <input type="checkbox" id="toggle-p3" class="detail-toggle-chk individual-detail-toggle">
           <label for="toggle-p3" class="lbl-toggle-details">View Details</label>
           <div class="expandable-details-content">
             <div class="inner-details-box">
@@ -916,7 +926,7 @@
             <a href="mailto:Ekru7447@gmail.com?subject=Inquiry: Sarbet 76m²" class="btn-action btn-email"><i class="fas fa-envelope"></i> Email</a>
             <a href="https://t.me/+251911717992" target="_blank" class="btn-action btn-telegram"><i class="fab fa-telegram-plane"></i> Telegram</a>
           </div>
-          <input type="radio" name="details-group" id="toggle-p4" class="detail-toggle-chk">
+          <input type="checkbox" id="toggle-p4" class="detail-toggle-chk individual-detail-toggle">
           <label for="toggle-p4" class="lbl-toggle-details">View Details</label>
           <div class="expandable-details-content">
             <div class="inner-details-box">
@@ -951,7 +961,7 @@
             <a href="mailto:Ekru7447@gmail.com?subject=Inquiry: Aware 131m²" class="btn-email btn-action"><i class="fas fa-envelope"></i> Email</a>
             <a href="https://t.me/+251911717992" class="btn-telegram btn-action"><i class="fab fa-telegram-plane"></i> Telegram</a>
           </div>
-          <input type="radio" name="details-group" id="toggle-p5" class="detail-toggle-chk"><label for="toggle-p5" class="lbl-toggle-details">View Details</label>
+          <input type="checkbox" id="toggle-p5" class="detail-toggle-chk individual-detail-toggle"><label for="toggle-p5" class="lbl-toggle-details">View Details</label>
           <div class="expandable-details-content"><div class="inner-details-box"><p class="detail-price-tag">Price: 14,000,000 ETB</p><p class="detail-dp-tag">Down Payment (20%): 2,800,000 ETB</p><ul class="deep-specs-list"><li><i class="fas fa-wifi"></i> High-Speed Wi-Fi Setup Ready</li><li><i class="fas fa-elevator"></i> High-Performance Passenger Elevator</li><li><i class="fas fa-bolt"></i> Standby Automatic Grid Generator</li><li><i class="fas fa-shield-alt"></i> 24/7 Monitored Gate Security</li></ul></div></div>
         </div>
       </div>
@@ -967,7 +977,7 @@
             <a href="mailto:Ekru7447@gmail.com?subject=Inquiry: Aware 135m²" class="btn-email btn-action"><i class="fas fa-envelope"></i> Email</a>
             <a href="https://t.me/+251911717992" class="btn-telegram btn-action"><i class="fab fa-telegram-plane"></i> Telegram</a>
           </div>
-          <input type="radio" name="details-group" id="toggle-p6" class="detail-toggle-chk"><label for="toggle-p6" class="lbl-toggle-details">View Details</label>
+          <input type="checkbox" id="toggle-p6" class="detail-toggle-chk individual-detail-toggle"><label for="toggle-p6" class="lbl-toggle-details">View Details</label>
           <div class="expandable-details-content"><div class="inner-details-box"><p class="detail-price-tag">Price: 14,400,000 ETB</p><p class="detail-dp-tag">Down Payment (20%): 2,880,000 ETB</p><ul class="deep-specs-list"><li><i class="fas fa-wifi"></i> High-Speed Wi-Fi Setup Ready</li><li><i class="fas fa-elevator"></i> High-Performance Passenger Elevator</li><li><i class="fas fa-bolt"></i> Standby Automatic Grid Generator</li><li><i class="fas fa-shield-alt"></i> 24/7 Monitored Gate Security</li></ul></div></div>
         </div>
       </div>
@@ -983,7 +993,7 @@
             <a href="mailto:Ekru7447@gmail.com?subject=Inquiry: Aware 140m²" class="btn-email btn-action"><i class="fas fa-envelope"></i> Email</a>
             <a href="https://t.me/+251911717992" class="btn-telegram btn-action"><i class="fab fa-telegram-plane"></i> Telegram</a>
           </div>
-          <input type="radio" name="details-group" id="toggle-p7" class="detail-toggle-chk"><label for="toggle-p7" class="lbl-toggle-details">View Details</label>
+          <input type="checkbox" id="toggle-p7" class="detail-toggle-chk individual-detail-toggle"><label for="toggle-p7" class="lbl-toggle-details">View Details</label>
           <div class="expandable-details-content"><div class="inner-details-box"><p class="detail-price-tag">Price: 14,900,000 ETB</p><p class="detail-dp-tag">Down Payment (20%): 2,980,000 ETB</p><ul class="deep-specs-list"><li><i class="fas fa-wifi"></i> High-Speed Wi-Fi Setup Ready</li><li><i class="fas fa-elevator"></i> High-Performance Passenger Elevator</li><li><i class="fas fa-bolt"></i> Standby Automatic Grid Generator</li><li><i class="fas fa-shield-alt"></i> 24/7 Monitored Gate Security</li></ul></div></div>
         </div>
       </div>
@@ -999,7 +1009,7 @@
             <a href="mailto:Ekru7447@gmail.com?subject=Inquiry: Aware 142m²" class="btn-email btn-action"><i class="fas fa-envelope"></i> Email</a>
             <a href="https://t.me/+251911717992" class="btn-telegram btn-action"><i class="fab fa-telegram-plane"></i> Telegram</a>
           </div>
-          <input type="radio" name="details-group" id="toggle-p8" class="detail-toggle-chk"><label for="toggle-p8" class="lbl-toggle-details">View Details</label>
+          <input type="checkbox" id="toggle-p8" class="detail-toggle-chk individual-detail-toggle"><label for="toggle-p8" class="lbl-toggle-details">View Details</label>
           <div class="expandable-details-content"><div class="inner-details-box"><p class="detail-price-tag">Price: 15,200,000 ETB</p><p class="detail-dp-tag">Down Payment (20%): 3,040,000 ETB</p><ul class="deep-specs-list"><li><i class="fas fa-wifi"></i> High-Speed Wi-Fi Setup Ready</li><li><i class="fas fa-elevator"></i> High-Performance Passenger Elevator</li><li><i class="fas fa-bolt"></i> Standby Automatic Grid Generator</li><li><i class="fas fa-shield-alt"></i> 24/7 Monitored Gate Security</li></ul></div></div>
         </div>
       </div>
@@ -1034,6 +1044,35 @@
       </div>
     </div>
   </footer>
+
+  <!-- SMART INTERACTIVE SCRIPT FIXES -->
+  <script>
+    // 1. MOBILE NAVBAR CLOSE ON LINK CLICK FIX
+    const menuCheckbox = document.getElementById('menu-toggle-open');
+    const navLinks = document.querySelectorAll('#navLinksMenu a');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        menuCheckbox.checked = false; // Automatically closes the hamburger dropdown drawer
+      });
+    });
+
+    // 2. EXCLUSIVE CARD VIEW DETAILS TOGGLE FIX
+    const detailToggles = document.querySelectorAll('.individual-detail-toggle');
+
+    detailToggles.forEach(toggle => {
+      toggle.addEventListener('change', function() {
+        if (this.checked) {
+          // When a user clicks a "View Details" button, turn off all OTHER detail drawers automatically
+          detailToggles.forEach(otherToggle => {
+            if (otherToggle !== toggle) {
+              otherToggle.checked = false;
+            }
+          });
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
